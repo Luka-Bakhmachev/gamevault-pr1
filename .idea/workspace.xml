@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac11f5b5-53e1-4308-bef4-172ab24efac3" name="Changes" comment="PR1-08 i PR1-09: lectura i escriptura de JSON amb Jackson">
+    <list default="true" id="ac11f5b5-53e1-4308-bef4-172ab24efac3" name="Changes" comment="PR1-10: conversió de formats entre CSV i JSON">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamevault-pr1/src/main/java/cat/pratfp/gamevault/servei/Convertidor.java" beforeDir="false" afterPath="$PROJECT_DIR$/gamevault-pr1/src/main/java/cat/pratfp/gamevault/servei/Convertidor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gamevault-pr1/src/main/java/cat/pratfp/gamevault/io/CauCataleg.java" beforeDir="false" afterPath="$PROJECT_DIR$/gamevault-pr1/src/main/java/cat/pratfp/gamevault/io/CauCataleg.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,6 +109,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JUnit.All in gamevault-pr1.executor": "Run",
+    "JUnit.CauCatalegTest.executor": "Run",
     "JUnit.ConvertidorTest.executor": "Run",
     "JUnit.CsvJocDaoTest.executor": "Run",
     "JUnit.JocTest.executor": "Run",
@@ -134,7 +135,22 @@
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.ConvertidorTest">
+  <component name="RunManager" selected="JUnit.CauCatalegTest">
+    <configuration name="CauCatalegTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gamevault-pr1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cat.pratfp.gamevault.io.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cat.pratfp.gamevault.io" />
+      <option name="MAIN_CLASS_NAME" value="cat.pratfp.gamevault.io.CauCatalegTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ConvertidorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gamevault-pr1" />
       <extension name="coverage">
@@ -160,21 +176,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="cat.pratfp.gamevault.io" />
       <option name="MAIN_CLASS_NAME" value="cat.pratfp.gamevault.io.CsvJocDaoTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JocTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="gamevault-pr1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cat.pratfp.gamevault.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cat.pratfp.gamevault.model" />
-      <option name="MAIN_CLASS_NAME" value="cat.pratfp.gamevault.model.JocTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -212,11 +213,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CauCatalegTest" />
         <item itemvalue="JUnit.ConvertidorTest" />
         <item itemvalue="JUnit.JsonJocDaoTest" />
         <item itemvalue="JUnit.CsvJocDaoTest" />
         <item itemvalue="JUnit.RegistreOperacionsTest" />
-        <item itemvalue="JUnit.JocTest" />
       </list>
     </recent_temporary>
   </component>
@@ -258,7 +259,8 @@
     <MESSAGE value="PR1-05: registre d'operacions en mode APPEND" />
     <MESSAGE value="PR1-06 i PR1-07: lectura de CSV amb gestió d'incidències i escriptura" />
     <MESSAGE value="PR1-08 i PR1-09: lectura i escriptura de JSON amb Jackson" />
-    <option name="LAST_COMMIT_MESSAGE" value="PR1-08 i PR1-09: lectura i escriptura de JSON amb Jackson" />
+    <MESSAGE value="PR1-10: conversió de formats entre CSV i JSON" />
+    <option name="LAST_COMMIT_MESSAGE" value="PR1-10: conversió de formats entre CSV i JSON" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
