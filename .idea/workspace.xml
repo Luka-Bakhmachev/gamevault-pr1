@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac11f5b5-53e1-4308-bef4-172ab24efac3" name="Changes" comment="PR1-12 i PR1-13: indexacio d'hores amb RandomAccessFile i actualitzacio in-place">
+    <list default="true" id="ac11f5b5-53e1-4308-bef4-172ab24efac3" name="Changes" comment="PR1-14: afegides proves unitaries propies per a Convertidor e IndexHores">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamevault-pr1/src/test/java/cat/pratfp/gamevault/ProvesPropiesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/gamevault-pr1/src/test/java/cat/pratfp/gamevault/ProvesPropiesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gamevault-pr1/src/main/java/cat/pratfp/gamevault/io/CsvJocDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/gamevault-pr1/src/main/java/cat/pratfp/gamevault/io/CsvJocDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,23 +37,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000000000000009" />
-      <entry key="S2" value="1.0009596036424946" />
-      <entry key="S5" value="1.3133542893925036" />
-      <entry key="S10" value="3.3558671348450435" />
-      <entry key="S30" value="10.392354402590238" />
-      <entry key="S60" value="14.343584897654491" />
-      <entry key="M2" value="16.91801875530981" />
-      <entry key="M5" value="18.700187064858746" />
-      <entry key="M10" value="19.33837008143743" />
-      <entry key="M15" value="19.556265509927783" />
-      <entry key="M30" value="19.776797982668825" />
-      <entry key="H1" value="19.888063251128006" />
-      <entry key="H2" value="19.94394743322326" />
-      <entry key="H4" value="19.971952636277543" />
-      <entry key="D1" value="19.99532250881415" />
-      <entry key="W1" value="19.99933171516873" />
+      <entry key="MS100" value="1.0000000000000004" />
+      <entry key="MS500" value="1.0009924730386146" />
+      <entry key="S2" value="1.277268329285926" />
+      <entry key="S5" value="1.9010580039536307" />
+      <entry key="S10" value="2.3408519673029695" />
+      <entry key="S30" value="2.7499806276708467" />
+      <entry key="S60" value="2.8707597457054916" />
+      <entry key="M2" value="2.9359145506794935" />
+      <entry key="M5" value="3.0501784211333502" />
+      <entry key="M10" value="3.2645446205518254" />
+      <entry key="M15" value="3.4405997972308633" />
+      <entry key="M30" value="4.34816500881916" />
+      <entry key="H1" value="7.548796612923626" />
+      <entry key="H2" value="12.55033386709408" />
+      <entry key="H4" value="17.102510810212397" />
+      <entry key="D1" value="22.64226859990155" />
+      <entry key="W1" value="23.800220349805432" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -75,23 +75,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.17075503209429943" />
-      <entry key="MS500" value="0.7022224378689994" />
-      <entry key="S2" value="0.9163687501386039" />
-      <entry key="S5" value="1.2775914438214024" />
-      <entry key="S10" value="3.3342439712087564" />
-      <entry key="S30" value="10.38075992859176" />
-      <entry key="S60" value="14.336527580539668" />
-      <entry key="M2" value="16.914075878878833" />
-      <entry key="M5" value="18.698494640197843" />
-      <entry key="M10" value="19.33750317737364" />
-      <entry key="M15" value="19.55568285999667" />
-      <entry key="M30" value="19.776504271210005" />
-      <entry key="H1" value="19.887915793175925" />
-      <entry key="H2" value="19.943873552986428" />
-      <entry key="H4" value="19.97191565825545" />
-      <entry key="D1" value="19.99531634053854" />
-      <entry key="W1" value="19.999330833857293" />
+      <entry key="MS100" value="0.9592641193252648" />
+      <entry key="MS500" value="0.9926955422780847" />
+      <entry key="S2" value="1.274036017153004" />
+      <entry key="S5" value="1.8986525848986784" />
+      <entry key="S10" value="2.3392465515908083" />
+      <entry key="S30" value="2.7493190800784624" />
+      <entry key="S60" value="2.8704101987561303" />
+      <entry key="M2" value="2.9357338069699823" />
+      <entry key="M5" value="3.0500859914417453" />
+      <entry key="M10" value="3.264472942968914" />
+      <entry key="M15" value="3.440538841742017" />
+      <entry key="M30" value="4.348114941291913" />
+      <entry key="H1" value="7.548745756191278" />
+      <entry key="H2" value="12.550289305301547" />
+      <entry key="H4" value="17.102479940056618" />
+      <entry key="D1" value="22.642261722851163" />
+      <entry key="W1" value="23.80021931577397" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -108,6 +108,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.GameVaultApp.executor": "Run",
     "JUnit.All in gamevault-pr1.executor": "Run",
     "JUnit.CauCatalegTest.executor": "Run",
     "JUnit.ConvertidorTest.executor": "Run",
@@ -116,6 +117,7 @@
     "JUnit.JocTest.executor": "Run",
     "JUnit.JsonJocDaoTest.executor": "Run",
     "JUnit.MagatzemTest.executor": "Run",
+    "JUnit.ProvesPropiesTest.executor": "Run",
     "JUnit.RegistreOperacionsTest.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -136,8 +138,29 @@
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.ProvesPropiesTest">
-    <configuration name="CauCatalegTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CsvJocDaoTest">
+    <configuration name="GameVaultApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cat.pratfp.gamevault.GameVaultApp" />
+      <module name="gamevault-pr1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cat.pratfp.gamevault.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in gamevault-pr1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gamevault-pr1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CsvJocDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gamevault-pr1" />
       <extension name="coverage">
         <pattern>
@@ -146,22 +169,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cat.pratfp.gamevault.io" />
-      <option name="MAIN_CLASS_NAME" value="cat.pratfp.gamevault.io.CauCatalegTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConvertidorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="gamevault-pr1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cat.pratfp.gamevault.servei.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cat.pratfp.gamevault.servei" />
-      <option name="MAIN_CLASS_NAME" value="cat.pratfp.gamevault.servei.ConvertidorTest" />
+      <option name="MAIN_CLASS_NAME" value="cat.pratfp.gamevault.io.CsvJocDaoTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -177,21 +185,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="cat.pratfp.gamevault.io" />
       <option name="MAIN_CLASS_NAME" value="cat.pratfp.gamevault.io.IndexHoresTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JsonJocDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="gamevault-pr1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cat.pratfp.gamevault.io.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cat.pratfp.gamevault.io" />
-      <option name="MAIN_CLASS_NAME" value="cat.pratfp.gamevault.io.JsonJocDaoTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -214,11 +207,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CsvJocDaoTest" />
+        <item itemvalue="JUnit.All in gamevault-pr1" />
+        <item itemvalue="Application.GameVaultApp" />
         <item itemvalue="JUnit.ProvesPropiesTest" />
         <item itemvalue="JUnit.IndexHoresTest" />
-        <item itemvalue="JUnit.CauCatalegTest" />
-        <item itemvalue="JUnit.ConvertidorTest" />
-        <item itemvalue="JUnit.JsonJocDaoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -263,7 +256,8 @@
     <MESSAGE value="PR1-10: conversió de formats entre CSV i JSON" />
     <MESSAGE value="PR1-11: cau binari amb serialització d'objectes Java" />
     <MESSAGE value="PR1-12 i PR1-13: indexacio d'hores amb RandomAccessFile i actualitzacio in-place" />
-    <option name="LAST_COMMIT_MESSAGE" value="PR1-12 i PR1-13: indexacio d'hores amb RandomAccessFile i actualitzacio in-place" />
+    <MESSAGE value="PR1-14: afegides proves unitaries propies per a Convertidor e IndexHores" />
+    <option name="LAST_COMMIT_MESSAGE" value="PR1-14: afegides proves unitaries propies per a Convertidor e IndexHores" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
