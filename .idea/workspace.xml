@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ac11f5b5-53e1-4308-bef4-172ab24efac3" name="Changes" comment="PR1-05: registre d'operacions en mode APPEND">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamevault-pr1/src/main/java/cat/pratfp/gamevault/model/Joc.java" beforeDir="false" afterPath="$PROJECT_DIR$/gamevault-pr1/src/main/java/cat/pratfp/gamevault/model/Joc.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
