@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac11f5b5-53e1-4308-bef4-172ab24efac3" name="Changes" comment="PR1-05: registre d'operacions en mode APPEND">
+    <list default="true" id="ac11f5b5-53e1-4308-bef4-172ab24efac3" name="Changes" comment="PR1-06 i PR1-07: lectura de CSV amb gestió d'incidències i escriptura">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamevault-pr1/src/main/java/cat/pratfp/gamevault/io/CsvJocDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/gamevault-pr1/src/main/java/cat/pratfp/gamevault/io/CsvJocDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamevault-pr1/src/test/java/cat/pratfp/gamevault/io/CsvJocDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/gamevault-pr1/src/test/java/cat/pratfp/gamevault/io/CsvJocDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gamevault-pr1/src/main/java/cat/pratfp/gamevault/io/JsonJocDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/gamevault-pr1/src/main/java/cat/pratfp/gamevault/io/JsonJocDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,6 +111,7 @@
     "JUnit.All in gamevault-pr1.executor": "Run",
     "JUnit.CsvJocDaoTest.executor": "Run",
     "JUnit.JocTest.executor": "Run",
+    "JUnit.JsonJocDaoTest.executor": "Run",
     "JUnit.MagatzemTest.executor": "Run",
     "JUnit.RegistreOperacionsTest.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -133,15 +133,7 @@
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.CsvJocDaoTest">
-    <configuration name="All in gamevault-pr1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="gamevault-pr1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.JsonJocDaoTest">
     <configuration name="CsvJocDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gamevault-pr1" />
       <extension name="coverage">
@@ -167,6 +159,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="cat.pratfp.gamevault.model" />
       <option name="MAIN_CLASS_NAME" value="cat.pratfp.gamevault.model.JocTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JsonJocDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gamevault-pr1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cat.pratfp.gamevault.io.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cat.pratfp.gamevault.io" />
+      <option name="MAIN_CLASS_NAME" value="cat.pratfp.gamevault.io.JsonJocDaoTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -204,11 +211,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JsonJocDaoTest" />
         <item itemvalue="JUnit.CsvJocDaoTest" />
         <item itemvalue="JUnit.RegistreOperacionsTest" />
         <item itemvalue="JUnit.JocTest" />
         <item itemvalue="JUnit.MagatzemTest" />
-        <item itemvalue="JUnit.All in gamevault-pr1" />
       </list>
     </recent_temporary>
   </component>
@@ -248,7 +255,8 @@
     <MESSAGE value="PR1-02: crea estructura de carpetes import, export i backup" />
     <MESSAGE value="PR1-01: validació del constructor compacte de Joc" />
     <MESSAGE value="PR1-05: registre d'operacions en mode APPEND" />
-    <option name="LAST_COMMIT_MESSAGE" value="PR1-05: registre d'operacions en mode APPEND" />
+    <MESSAGE value="PR1-06 i PR1-07: lectura de CSV amb gestió d'incidències i escriptura" />
+    <option name="LAST_COMMIT_MESSAGE" value="PR1-06 i PR1-07: lectura de CSV amb gestió d'incidències i escriptura" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
