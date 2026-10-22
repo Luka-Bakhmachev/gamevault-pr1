@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac11f5b5-53e1-4308-bef4-172ab24efac3" name="Changes" comment="PR1-02: crea estructura de carpetes import, export i backup">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamevault-pr1/src/main/java/cat/pratfp/gamevault/model/Joc.java" beforeDir="false" afterPath="$PROJECT_DIR$/gamevault-pr1/src/main/java/cat/pratfp/gamevault/model/Joc.java" afterDir="false" />
+    <list default="true" id="ac11f5b5-53e1-4308-bef4-172ab24efac3" name="Changes" comment="PR1-01: validació del constructor compacte de Joc">
+      <change beforePath="$PROJECT_DIR$/gamevault-pr1/src/main/java/cat/pratfp/gamevault/io/RegistreOperacions.java" beforeDir="false" afterPath="$PROJECT_DIR$/gamevault-pr1/src/main/java/cat/pratfp/gamevault/io/RegistreOperacions.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +210,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="PR1-02: crea estructura de carpetes import, export i backup" />
-    <option name="LAST_COMMIT_MESSAGE" value="PR1-02: crea estructura de carpetes import, export i backup" />
+    <MESSAGE value="PR1-01: validació del constructor compacte de Joc" />
+    <option name="LAST_COMMIT_MESSAGE" value="PR1-01: validació del constructor compacte de Joc" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
