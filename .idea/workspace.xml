@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac11f5b5-53e1-4308-bef4-172ab24efac3" name="Changes" comment="PR1-11: cau binari amb serialització d'objectes Java">
+    <list default="true" id="ac11f5b5-53e1-4308-bef4-172ab24efac3" name="Changes" comment="PR1-12 i PR1-13: indexacio d'hores amb RandomAccessFile i actualitzacio in-place">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamevault-pr1/src/main/java/cat/pratfp/gamevault/io/IndexHores.java" beforeDir="false" afterPath="$PROJECT_DIR$/gamevault-pr1/src/main/java/cat/pratfp/gamevault/io/IndexHores.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gamevault-pr1/src/test/java/cat/pratfp/gamevault/ProvesPropiesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/gamevault-pr1/src/test/java/cat/pratfp/gamevault/ProvesPropiesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +136,7 @@
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.IndexHoresTest">
+  <component name="RunManager" selected="JUnit.ProvesPropiesTest">
     <configuration name="CauCatalegTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gamevault-pr1" />
       <extension name="coverage">
@@ -162,21 +162,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="cat.pratfp.gamevault.servei" />
       <option name="MAIN_CLASS_NAME" value="cat.pratfp.gamevault.servei.ConvertidorTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CsvJocDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="gamevault-pr1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cat.pratfp.gamevault.io.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cat.pratfp.gamevault.io" />
-      <option name="MAIN_CLASS_NAME" value="cat.pratfp.gamevault.io.CsvJocDaoTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -212,13 +197,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProvesPropiesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gamevault-pr1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cat.pratfp.gamevault.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cat.pratfp.gamevault" />
+      <option name="MAIN_CLASS_NAME" value="cat.pratfp.gamevault.ProvesPropiesTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProvesPropiesTest" />
         <item itemvalue="JUnit.IndexHoresTest" />
         <item itemvalue="JUnit.CauCatalegTest" />
         <item itemvalue="JUnit.ConvertidorTest" />
         <item itemvalue="JUnit.JsonJocDaoTest" />
-        <item itemvalue="JUnit.CsvJocDaoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -262,7 +262,8 @@
     <MESSAGE value="PR1-08 i PR1-09: lectura i escriptura de JSON amb Jackson" />
     <MESSAGE value="PR1-10: conversió de formats entre CSV i JSON" />
     <MESSAGE value="PR1-11: cau binari amb serialització d'objectes Java" />
-    <option name="LAST_COMMIT_MESSAGE" value="PR1-11: cau binari amb serialització d'objectes Java" />
+    <MESSAGE value="PR1-12 i PR1-13: indexacio d'hores amb RandomAccessFile i actualitzacio in-place" />
+    <option name="LAST_COMMIT_MESSAGE" value="PR1-12 i PR1-13: indexacio d'hores amb RandomAccessFile i actualitzacio in-place" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
