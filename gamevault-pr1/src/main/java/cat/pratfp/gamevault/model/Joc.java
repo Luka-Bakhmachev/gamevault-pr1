@@ -3,12 +3,15 @@ package cat.pratfp.gamevault.model;
 import java.io.Serializable;
 import java.time.LocalDate;
 
+/**
+ * Representa un joc del catàleg de GameVault.
+ */
 public record Joc(
         int id,
         String titol,
-        String genere,
+        String estudi,
         String plataforma,
-        LocalDate dataLlançament,
+        LocalDate dataSortida,
         double horesJugades,
         double nota
 ) implements Serializable {
