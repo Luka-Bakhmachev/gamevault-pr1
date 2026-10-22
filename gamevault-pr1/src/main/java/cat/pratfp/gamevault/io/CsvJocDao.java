@@ -20,6 +20,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
 import java.util.List;
+import java.io.BufferedWriter;
 
 /**
  * Lectura i escriptura del catàleg en CSV amb OpenCSV (separador ; i UTF-8).
@@ -51,18 +52,29 @@ public class CsvJocDao {
             int linia = 1;                      // la línia 1 és la capçalera
             while ((c = csv.readNext()) != null) {
                 linia++;
-                /*
-                 * TODO PR1-06 · Convertir una línia en un Joc sense petar (CA 1.3 i 1.6)
-                 * c[] té els camps de la línia. Si la línia és bona, afegeix el Joc a jocs.
-                 * Si no ho és, afegeix a incidencies un text "línia N: motiu" i CONTINUA amb la següent:
-                 *   - menys de 7 camps                 -> "línia N: incompleta"
-                 *   - data que no es pot convertir     -> "línia N: data mal formada"
-                 *   - id, hores o nota no numèrics     -> "línia N: número invàlid"
-                 *   - el Joc rebutja les dades         -> "línia N: " + el missatge de l'excepció
-                 * Compte: NumberFormatException és filla d'IllegalArgumentException.
-                 * Pista: sessió 5, Ex3LlegeixCsvBrut.
-                 */
-                // Escriu aquí el teu codi (PR1-06)
+
+                if (c.length < 7) {
+                    incidencies.add("línia " + linia + ": incompleta");
+                    continue;
+                }
+
+                try {
+                    int id = Integer.parseInt(c[0].trim());
+                    String titol = c[1].trim();
+                    String plataforma = c[2].trim();
+                    String estudi = c[3].trim();
+                    LocalDate dataSortida = LocalDate.parse(c[4].trim());
+                    double horesJugades = Double.parseDouble(c[5].trim());
+                    double nota = Double.parseDouble(c[6].trim());
+
+                    jocs.add(new Joc(id, titol, estudi, plataforma, dataSortida, horesJugades, nota));
+                } catch (DateTimeParseException e) {
+                    incidencies.add("línia " + linia + ": data mal formada");
+                } catch (NumberFormatException e) {
+                    incidencies.add("línia " + linia + ": número invàlid");
+                } catch (IllegalArgumentException e) {
+                    incidencies.add("línia " + linia + ": " + e.getMessage());
+                }
             }
         } catch (CsvValidationException e) {
             throw new IOException("CSV mal format a " + p, e);
@@ -80,8 +92,21 @@ public class CsvJocDao {
      * Pista: sessió 5, Ex4EscriuCsv.
      */
     public void escriu(Path p, List<Joc> jocs) throws IOException {
-        // Escriu aquí el teu codi (PR1-07)
-        throw new UnsupportedOperationException("PR1-07: encara no està fet");
+        try (BufferedWriter writer = Files.newBufferedWriter(p, StandardCharsets.UTF_8);
+             CSVWriter csvWriter = new CSVWriter(
+                     writer,
+                     SEPARADOR,
+                     CSVWriter.DEFAULT_QUOTE_CHARACTER,
+                     CSVWriter.DEFAULT_ESCAPE_CHARACTER,
+                     CSVWriter.DEFAULT_LINE_END
+             )) {
+
+            csvWriter.writeNext(CAPCALERA, false);
+
+            for (Joc j : jocs) {
+                csvWriter.writeNext(aCamps(j), false);
+            }
+        }
     }
 
     /**
@@ -91,7 +116,14 @@ public class CsvJocDao {
      * @return els 7 camps en l'ordre de la capçalera
      */
     static String[] aCamps(Joc j) {
-        return new String[]{String.valueOf(j.id()), j.titol(), j.plataforma(), j.estudi(),
-                j.dataSortida().toString(), String.valueOf(j.horesJugades()), String.valueOf(j.nota())};
+        return new String[]{
+                String.valueOf(j.id()),
+                j.titol(),
+                j.plataforma(),
+                j.estudi(),
+                j.dataSortida().toString(),
+                String.valueOf(j.horesJugades()),
+                String.valueOf(j.nota())
+        };
     }
-}
+    }
