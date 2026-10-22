@@ -30,4 +30,4 @@ public record Joc(
             throw new IllegalArgumentException("La nota ha d'anar de 0 a 10");
         }
     }
-}y
+}

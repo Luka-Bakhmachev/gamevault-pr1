@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac11f5b5-53e1-4308-bef4-172ab24efac3" name="Changes" comment="PR1-01: validació del constructor compacte de Joc">
-      <change beforePath="$PROJECT_DIR$/gamevault-pr1/src/main/java/cat/pratfp/gamevault/io/RegistreOperacions.java" beforeDir="false" afterPath="$PROJECT_DIR$/gamevault-pr1/src/main/java/cat/pratfp/gamevault/io/RegistreOperacions.java" afterDir="false" />
+    <list default="true" id="ac11f5b5-53e1-4308-bef4-172ab24efac3" name="Changes" comment="PR1-05: registre d'operacions en mode APPEND">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gamevault-pr1/src/main/java/cat/pratfp/gamevault/model/Joc.java" beforeDir="false" afterPath="$PROJECT_DIR$/gamevault-pr1/src/main/java/cat/pratfp/gamevault/model/Joc.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,6 +111,7 @@
     "JUnit.All in gamevault-pr1.executor": "Run",
     "JUnit.JocTest.executor": "Run",
     "JUnit.MagatzemTest.executor": "Run",
+    "JUnit.RegistreOperacionsTest.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -129,7 +131,7 @@
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.JocTest">
+  <component name="RunManager" selected="JUnit.RegistreOperacionsTest">
     <configuration name="All in gamevault-pr1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gamevault-pr1" />
       <option name="PACKAGE_NAME" value="" />
@@ -168,8 +170,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RegistreOperacionsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gamevault-pr1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cat.pratfp.gamevault.io.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cat.pratfp.gamevault.io" />
+      <option name="MAIN_CLASS_NAME" value="cat.pratfp.gamevault.io.RegistreOperacionsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RegistreOperacionsTest" />
         <item itemvalue="JUnit.JocTest" />
         <item itemvalue="JUnit.MagatzemTest" />
         <item itemvalue="JUnit.All in gamevault-pr1" />
@@ -211,7 +229,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="PR1-02: crea estructura de carpetes import, export i backup" />
     <MESSAGE value="PR1-01: validació del constructor compacte de Joc" />
-    <option name="LAST_COMMIT_MESSAGE" value="PR1-01: validació del constructor compacte de Joc" />
+    <MESSAGE value="PR1-05: registre d'operacions en mode APPEND" />
+    <option name="LAST_COMMIT_MESSAGE" value="PR1-05: registre d'operacions en mode APPEND" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
